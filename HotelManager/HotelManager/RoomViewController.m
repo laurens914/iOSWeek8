@@ -18,6 +18,7 @@
 @implementation RoomViewController
 
 -(NSArray *)dataSource{
+    // _dataSource = [self.selectedHotel.rooms allObjects]
     
     if ( !_dataSource){
         AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
@@ -105,15 +106,12 @@
     UITableViewCell *cell  = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     //    NSError *error;
     if (!cell){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
     
     Room *room = [self.dataSource objectAtIndex:indexPath.row];
-    NSString *roomNumber = [room.number stringValue];
-    cell.textLabel.text = roomNumber;
-    
-    NSString *beds = [room.beds stringValue];
-    cell.detailTextLabel.text = beds;
+    NSString *roomDetails = [NSString stringWithFormat:@"Room %@, Beds %@, Rate $ %@ a night", room.number, room.beds, room.rate];
+    cell.textLabel.text = roomDetails;
     
     return cell;
 }
