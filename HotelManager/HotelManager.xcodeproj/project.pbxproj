@@ -26,6 +26,11 @@
 		894B5ADE1CA0637300DD2BFD /* room.png in Resources */ = {isa = PBXBuildFile; fileRef = 894B5ADD1CA0637300DD2BFD /* room.png */; };
 		894B5AE11CA06DB900DD2BFD /* HotelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 894B5AE01CA06DB900DD2BFD /* HotelViewController.m */; };
 		894B5AE41CA091C500DD2BFD /* RoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 894B5AE31CA091C500DD2BFD /* RoomViewController.m */; };
+		894B5B0E1CA1A6B400DD2BFD /* DateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 894B5B0D1CA1A6B400DD2BFD /* DateViewController.m */; };
+		894B5B121CA1A71A00DD2BFD /* NSManagedObjectContext+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 894B5B111CA1A71A00DD2BFD /* NSManagedObjectContext+Additions.m */; };
+		894B5B161CA1B0E800DD2BFD /* AvailabilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 894B5B151CA1B0E800DD2BFD /* AvailabilityViewController.m */; };
+		894B5B191CA1B2BC00DD2BFD /* ReservationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 894B5B181CA1B2BC00DD2BFD /* ReservationService.m */; };
+		894B5B1D1CA1B92500DD2BFD /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 894B5B1C1CA1B92500DD2BFD /* BookViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +67,16 @@
 		894B5AE01CA06DB900DD2BFD /* HotelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelViewController.m; sourceTree = "<group>"; };
 		894B5AE21CA091C500DD2BFD /* RoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomViewController.h; sourceTree = "<group>"; };
 		894B5AE31CA091C500DD2BFD /* RoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomViewController.m; sourceTree = "<group>"; };
+		894B5B0C1CA1A6B400DD2BFD /* DateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateViewController.h; sourceTree = "<group>"; };
+		894B5B0D1CA1A6B400DD2BFD /* DateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateViewController.m; sourceTree = "<group>"; };
+		894B5B101CA1A71A00DD2BFD /* NSManagedObjectContext+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+Additions.h"; sourceTree = "<group>"; };
+		894B5B111CA1A71A00DD2BFD /* NSManagedObjectContext+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+Additions.m"; sourceTree = "<group>"; };
+		894B5B141CA1B0E800DD2BFD /* AvailabilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailabilityViewController.h; sourceTree = "<group>"; };
+		894B5B151CA1B0E800DD2BFD /* AvailabilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailabilityViewController.m; sourceTree = "<group>"; };
+		894B5B171CA1B2BC00DD2BFD /* ReservationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReservationService.h; sourceTree = "<group>"; };
+		894B5B181CA1B2BC00DD2BFD /* ReservationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReservationService.m; sourceTree = "<group>"; };
+		894B5B1B1CA1B92500DD2BFD /* BookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookViewController.h; sourceTree = "<group>"; };
+		894B5B1C1CA1B92500DD2BFD /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +132,7 @@
 				894B5A9D1CA05C6B00DD2BFD /* Info.plist */,
 				894B5A8C1CA05C6B00DD2BFD /* AppDelegate.h */,
 				894B5A8D1CA05C6B00DD2BFD /* AppDelegate.m */,
+				894B5B131CA1A72700DD2BFD /* Category */,
 			);
 			name = "App Global";
 			sourceTree = "<group>";
@@ -124,12 +140,13 @@
 		894B5AA41CA05D1600DD2BFD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				894B5A8F1CA05C6B00DD2BFD /* ViewController.h */,
-				894B5A901CA05C6B00DD2BFD /* ViewController.m */,
-				894B5ADF1CA06DB900DD2BFD /* HotelViewController.h */,
-				894B5AE01CA06DB900DD2BFD /* HotelViewController.m */,
-				894B5AE21CA091C500DD2BFD /* RoomViewController.h */,
-				894B5AE31CA091C500DD2BFD /* RoomViewController.m */,
+				894B5B0B1CA1A68C00DD2BFD /* hotels */,
+				894B5B0F1CA1A6BE00DD2BFD /* Reservation */,
+				894B5B141CA1B0E800DD2BFD /* AvailabilityViewController.h */,
+				894B5B151CA1B0E800DD2BFD /* AvailabilityViewController.m */,
+				894B5B1A1CA1B2CC00DD2BFD /* ReservationService */,
+				894B5B1B1CA1B92500DD2BFD /* BookViewController.h */,
+				894B5B1C1CA1B92500DD2BFD /* BookViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -184,6 +201,46 @@
 				894B5ACE1CA0625400DD2BFD /* Guest.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		894B5B0B1CA1A68C00DD2BFD /* hotels */ = {
+			isa = PBXGroup;
+			children = (
+				894B5A8F1CA05C6B00DD2BFD /* ViewController.h */,
+				894B5A901CA05C6B00DD2BFD /* ViewController.m */,
+				894B5ADF1CA06DB900DD2BFD /* HotelViewController.h */,
+				894B5AE01CA06DB900DD2BFD /* HotelViewController.m */,
+			);
+			name = hotels;
+			sourceTree = "<group>";
+		};
+		894B5B0F1CA1A6BE00DD2BFD /* Reservation */ = {
+			isa = PBXGroup;
+			children = (
+				894B5AE21CA091C500DD2BFD /* RoomViewController.h */,
+				894B5AE31CA091C500DD2BFD /* RoomViewController.m */,
+				894B5B0C1CA1A6B400DD2BFD /* DateViewController.h */,
+				894B5B0D1CA1A6B400DD2BFD /* DateViewController.m */,
+			);
+			name = Reservation;
+			sourceTree = "<group>";
+		};
+		894B5B131CA1A72700DD2BFD /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				894B5B101CA1A71A00DD2BFD /* NSManagedObjectContext+Additions.h */,
+				894B5B111CA1A71A00DD2BFD /* NSManagedObjectContext+Additions.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		894B5B1A1CA1B2CC00DD2BFD /* ReservationService */ = {
+			isa = PBXGroup;
+			children = (
+				894B5B171CA1B2BC00DD2BFD /* ReservationService.h */,
+				894B5B181CA1B2BC00DD2BFD /* ReservationService.m */,
+			);
+			name = ReservationService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,15 +319,20 @@
 				894B5ACF1CA0625400DD2BFD /* Room+CoreDataProperties.m in Sources */,
 				894B5AD21CA0625400DD2BFD /* Reservation.m in Sources */,
 				894B5AE11CA06DB900DD2BFD /* HotelViewController.m in Sources */,
+				894B5B1D1CA1B92500DD2BFD /* BookViewController.m in Sources */,
 				894B5A971CA05C6B00DD2BFD /* HotelManager.xcdatamodeld in Sources */,
+				894B5B121CA1A71A00DD2BFD /* NSManagedObjectContext+Additions.m in Sources */,
 				894B5A911CA05C6B00DD2BFD /* ViewController.m in Sources */,
+				894B5B161CA1B0E800DD2BFD /* AvailabilityViewController.m in Sources */,
 				894B5AD11CA0625400DD2BFD /* Reservation+CoreDataProperties.m in Sources */,
+				894B5B0E1CA1A6B400DD2BFD /* DateViewController.m in Sources */,
 				894B5AD61CA0625400DD2BFD /* Guest.m in Sources */,
 				894B5AD31CA0625400DD2BFD /* Hotel+CoreDataProperties.m in Sources */,
 				894B5A8E1CA05C6B00DD2BFD /* AppDelegate.m in Sources */,
 				894B5AD41CA0625400DD2BFD /* Hotel.m in Sources */,
 				894B5AE41CA091C500DD2BFD /* RoomViewController.m in Sources */,
 				894B5A8B1CA05C6B00DD2BFD /* main.m in Sources */,
+				894B5B191CA1B2BC00DD2BFD /* ReservationService.m in Sources */,
 				894B5AD51CA0625400DD2BFD /* Guest+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +474,7 @@
 				894B5AA21CA05C6B00DD2BFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

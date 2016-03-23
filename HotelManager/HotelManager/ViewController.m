@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "HotelViewController.h"
+#import "DateViewController.h"
 
 @interface ViewController ()
 
@@ -23,6 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupViewController];
+    NSLog( @"%f",[[UIScreen mainScreen]bounds].size.width);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -186,8 +188,8 @@
     
 }
 -(void)bookButtonSelected{
-//
     
+[self.navigationController pushViewController:[[DateViewController alloc]init]animated:YES];
 }
 -(void)lookupButtonSelected{
     
